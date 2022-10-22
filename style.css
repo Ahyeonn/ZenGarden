@@ -1,0 +1,136 @@
+/* Style big elements => small elements */
+body {
+    line-height: 1.25;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(sansation_light.woff);
+ }
+
+h2, h3 {
+    font-weight: lighter;
+    font-size: 34px;
+}
+
+a {
+    color: rgb(200, 105, 105);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p {
+    width: 50%;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    margin: 0;
+    padding: 120px 0px 100px 0px;
+    font-family: headerFont;
+}
+
+[role='article'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h2, .explanation h3, .benefits h3 {
+    padding-top: 80px;
+}
+
+.preamble, .participation, .requirements {
+    padding-bottom: 80px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 0px 80px 0px;
+}
+
+footer a {
+    font-size: 27px;
+    color:white;
+    padding: 0px 45px;
+    font-weight: bolder;
+    font-family: headerFont;
+}
+
+.zen-validate-html {
+    color: rgb(246, 131, 131);
+}
+
+.zen-validate-css {
+    color: rgb(121, 121, 243);
+}
+
+.zen-license {
+    color: rgb(174, 169, 169);
+}
+
+.zen-accessibility {
+    color: rgb(179, 201, 165);
+}
+
+.zen-github {
+    color: rgb(236, 217, 174);
+}
+
+.explanation, .participation {
+    background-color: rgb(238, 226, 223);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.wrapper li {
+    list-style-type:none;
+}
+
+.design-selection, .design-archives, .zen-resources {
+    width: 100%;
+}
+
+.resources, .archives, .select {
+    font-family: headerFont;
+    color: rgb(66, 64, 64);
+    font-size: 25px;
+}
+.sidebar {
+    display: flex;
+    justify-content: center;
+    border-top: solid;
+    padding-top: 20px;
+    border-width: 1px;
+    border-color: rgb(206, 203, 203);
+}
+
+.design-selection a, .design-archives a, .zen-resources a {
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(102, 101, 101);
+}
+
+.zen-resources ul, .design-archives ul, .design-selection ul {
+    padding: 0;
+}
+
+.design-selection li {
+    font-weight: lighter;
+    color: gray;
+    font-size: 15px;
+}
