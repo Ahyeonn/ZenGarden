@@ -7,12 +7,6 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    body {
-        font-size: 15px;
-    }
-}
-
 @font-face {
     font-family: headerFont;
     src: url(sansation_light.woff);
@@ -23,12 +17,6 @@ h2, h3 {
     font-size: 34px;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    h2, h3 {
-        font-size: 23px;
-    }
-}
-
 a {
     color: rgb(200, 105, 105);
     text-decoration: none;
@@ -36,22 +24,10 @@ a {
     font-weight: bolder;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    a {
-        font-size: 18px;
-    }
-}
-
 p {
     width: 50%;
     font-weight: lighter;
     text-align: justify;
-}
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-    p {
-        width:60%;
-    }
 }
 
 h1 {
@@ -65,51 +41,34 @@ h1 {
     font-family: headerFont;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    h1 {
-        font-size: 45px;
-        padding: 80px 0px 60px 0px;
-    }
-}
-
 [role='article'] {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* 
+.intro {
+    background-image: url(./images/leaf.webp);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: right;
+} */
 
 .intro h2, .explanation h3, .benefits h3 {
     padding-top: 80px;
-}
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .intro h2, .explanation h3, .benefits h3 {
-        padding-top: 40px;
-    }
 }
 
 .preamble, .participation, .requirements {
     padding-bottom: 80px;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .preamble, .participation, .requirements {
-        padding-bottom: 40px;
-    }
-}
-
 footer {
     text-align: center;
     font-weight: bold;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 0px 100px 0px;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    footer {
-        padding: 0px 0px 40px 0px;
-    }
-}
-
-footer a {
+/* footer a {
     color:white;
     padding: 20px 45px;
     font-weight: bolder;
@@ -119,49 +78,63 @@ footer a {
 	margin: 10px;
 	font-size: 48px;
 	text-decoration: none;
+} */
+
+footer a {
+    /* background-color: rgba(246, 182, 217, 0.86); */
+    padding: 13px 70px 13px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    background-image: url(./images/flowers.png);
+    border-color: pink;
+    border:solid;
+    border-style: double;
+    border-width: 4px;
+    margin: 0px 20px;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    footer a {
-        font-size: 20px;
-        padding: 5px 5px;
-    }
-}
-
-.zen-validate-html {
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
     color: rgb(246, 131, 131);
 }
 
 .zen-validate-css {
-    color: rgb(121, 121, 243);
+    /* color: rgb(121, 121, 243); */
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center 10px center; 
 }
 
 .zen-license {
-    color: rgb(174, 169, 169);
+    /* color: rgb(174, 169, 169); */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: right top; 
 }
 
 .zen-accessibility {
-    color: rgb(179, 201, 165);
+    background-position: right 10px bottom 5px; 
 }
 
 .zen-github {
-    color: rgb(236, 217, 174);
+    background-position: left 60px top 10px; 
 }
 
 .explanation, .participation {
     background-color: rgb(238, 226, 223);
 }
 
+
+
 .wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
-}
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .wrapper {
-        width: 80%;
-    }
 }
 
 .wrapper li {
@@ -171,28 +144,18 @@ footer a {
 .design-selection, .design-archives, .zen-resources {
     width: 60%;
     text-align: justify;
-}
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .design-selection, .design-archives, .zen-resources {
-        width: 20%;
-        text-align: left;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .resources, .archives, .select {
     font-family: headerFont;
     color: rgb(252, 249, 249);
-    font-size: 25px;
+    font-size: 22px;
+    margin: 6px 0;
 }
 
-@media screen {
-    .resources, .archives, .select {
-        font-size: 17px;
-        text-align: left;
-        height: 30px;
-    }
-}
 .sidebar {
     display: flex;
     justify-content: center;
@@ -200,24 +163,11 @@ footer a {
     background-color: rgb(239, 199, 183);
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .sidebar {
-        padding-top: 20px;
-    }
-}
-
 .design-selection a, .design-archives a, .zen-resources a {
     font-size: 14px;
     font-weight: lighter;
     color: rgb(152, 97, 97);
 }
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-    .design-selection a, .design-archives a, .zen-resources a {
-        font-size: 11px;
-    }
-}
-
 
 .zen-resources ul, .design-archives ul, .design-selection ul {
     padding: 0;
@@ -229,8 +179,96 @@ footer a {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
-    .design-selection li {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    h2, h3 {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    p {
+        width:70%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    h1 {
+        font-size: 45px;
+        padding: 80px 0px 60px 0px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .intro h2, .explanation h3, .benefits h3 {
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .preamble, .participation, .requirements {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    footer {
+        padding: 0px 0px 40px 0px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    footer a {
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .design-selection, .design-archives, .zen-resources {
+        width: 20%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .resources, .archives, .select {
+        font-size: 17px;
+        text-align: left;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .sidebar {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .design-selection a, .design-archives a, .zen-resources a {
         font-size: 11px;
     }
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .design-selection li {
+        font-size: 11px;
+    }
+}
